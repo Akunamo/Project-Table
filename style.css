@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    padding-block: 1rem;
+    border: 2px solid gray;
+    font-size: 24px;
+}
+
+/* table tr:nth-child(odd) {
+    background-color: ;
+} */
+
+/* td {
+
+} */
