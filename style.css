@@ -22,10 +22,20 @@ th {
     font-size: 24px;
 }
 
-/* table tr:nth-child(odd) {
-    background-color: ;
-} */
+table th:last-child {
+    width: 190px;
+    background-color: red;
+}
 
-/* td {
+tr {
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+}
 
-} */
+
+.empdata {
+    width: 300px;
+    padding-block: 50px;
+    margin-inline: auto;
+}
