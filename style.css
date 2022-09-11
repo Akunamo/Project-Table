@@ -54,7 +54,7 @@ table {
     margin-inline: auto;
 }
 
-@media (max-width) {
+@media (max-width:500px) {
     table {
          width:100%;
     }
