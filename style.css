@@ -50,14 +50,8 @@ header {
 }
 
 table {
-    width: min(90%,800px);
+    width: min(100%,800px);
     margin-inline: auto;
-}
-
-@media (max-width:500px) {
-    table {
-         width:100%;
-    }
 }
 
 
