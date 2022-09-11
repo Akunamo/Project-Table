@@ -54,6 +54,12 @@ table {
     margin-inline: auto;
 }
 
+@media (max-width) {
+    table {
+         width:100%;
+    }
+}
+
 
 tr {
     background-color: whitesmoke;
