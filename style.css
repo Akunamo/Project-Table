@@ -42,7 +42,7 @@ header {
 
 .title {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     margin-bottom: 2rem;
@@ -67,12 +67,13 @@ table th:last-child {
 }
 
 th {
-    font-size: 24px;
+    font-size: 18px;
+    fonthweight: 700;
     color: rgb(57,94,102);
 }
 
 td {
-    font-size: 18px;
+    font-size: 16px;
     color: rgb(56,125,122);
 }
 
