@@ -31,17 +31,19 @@ function addObjToTable(emp) {
   cell2.innerText = emp.empDepartment;
 
   // Creating Remove and Publish buttons
-
+  let divFlex = document.createElement("div");
   let btnRemove = document.createElement("button");
   let btnPublish = document.createElement("button");
+  divFlex.classList.add("flex-column")
   btnRemove.classList.add("btn-remove");
   btnPublish.classList.add("btn-publish");
   btnRemove.innerText = "Remove";
   btnPublish.innerText = "Publish";
   // btnRemove.setAttribute('onclick' )   Trying to run function onclick, now using event delegation
   // btnRemove.onclick() = removeEmp();
-  cell3.appendChild(btnRemove);
-  cell3.appendChild(btnPublish);
+  cell3.appendChild(divFlex);
+  divFlex.appendChild(btnRemove);
+  divFlex.appendChild(btnPublish);
 }
 
 refreshtable();
@@ -89,7 +91,7 @@ function addEmpObj() {
 
 table.addEventListener("click", (item) => {
   btn = item.target
-  let currentRow = btn.parentElement.parentElement;
+  let currentRow = btn.parentElement.parentElement.parentElement;
   let itemSrNo = currentRow.children[0].innerText;
   // better way to find the index of the object instead of guessing
   let objectIndex = empData.findIndex((e) => e.srNo == itemSrNo);
